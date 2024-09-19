@@ -5,7 +5,7 @@ import { MESSAGE_TYPE, messageTypeList } from '@enums/message'
  * @description: 置空json数据
  * @param {*} data json数据
  * @return {*}
- * @author: gumingchen
+ * @author: neko
  */
 export function clearJson(data) {
   const json = data
@@ -116,7 +116,7 @@ export function timeFormat(time) {
  * @description: json 转 param
  * @param {Object} json json数据
  * @return {*}
- * @author: gumingchen
+ * @author: neko
  */
 export function parseJson2Param(json) {
   let result = ''
@@ -134,7 +134,7 @@ export function parseJson2Param(json) {
  * @description: param 转 json
  * @param {String} url 链接
  * @return {*}
- * @author: gumingchen
+ * @author: neko
  */
 export function parseParam2Json(url) {
   const result = {}
@@ -157,7 +157,7 @@ export function parseParam2Json(url) {
  * @description: 生成UUID
  * @param {*}
  * @return {*}
- * @author: gumingchen
+ * @author: neko
  */
 export function generateUUID() {
   let result = ''
@@ -187,7 +187,7 @@ export async function fetchFile(url) {
  * @param {*} blob
  * @param {*} name 文件名称
  * @return {*}
- * @author: gumingchen
+ * @author: neko
  */
 export function downloadFile(blob, name) {
   if (blob) {

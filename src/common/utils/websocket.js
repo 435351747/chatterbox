@@ -6,7 +6,7 @@ export default class WebsocketClass {
    * @param {*} url ws资源路径
    * @param {*} callback 服务端信息回调
    * @return {*}
-   * @author: gumingchen
+   * @author: neko
    */
   constructor(url, callback) {
     this.url = url
@@ -22,7 +22,7 @@ export default class WebsocketClass {
    * @description: 连接
    * @param {*}
    * @return {*}
-   * @author: gumingchen
+   * @author: neko
    */
   connect() {
     this.ws = new WebSocket(this.url)
@@ -49,7 +49,7 @@ export default class WebsocketClass {
    * @description: 发送消息
    * @param {*} data
    * @return {*}
-   * @author: gumingchen
+   * @author: neko
    */
   send(data) {
     return this.ws.send(JSON.stringify(data))
@@ -59,7 +59,7 @@ export default class WebsocketClass {
    * @description: 关闭weibsocket 主动关闭不会触发重连
    * @param {*}
    * @return {*}
-   * @author: gumingchen
+   * @author: neko
    */
   close() {
     this.status = 2
@@ -70,7 +70,7 @@ export default class WebsocketClass {
    * @description: socket关闭事件
    * @param {*}
    * @return {*}
-   * @author: gumingchen
+   * @author: neko
    */
   onClose(e) {
     console.error(e)
@@ -86,7 +86,7 @@ export default class WebsocketClass {
    * @description: 心跳机制
    * @param {*}
    * @return {*}
-   * @author: gumingchen
+   * @author: neko
    */
   heartHandler() {
     const data = {

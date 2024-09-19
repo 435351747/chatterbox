@@ -12,7 +12,7 @@ import { blob2Json } from '@utils'
  * @description: 异常消息提示
  * @param {string} string
  * @return {*}
- * @author: gumingchen
+ * @author: neko
  */
 const prompt = (message) => {
   ElMessage({
@@ -27,7 +27,7 @@ const prompt = (message) => {
  * @param {number} code
  * @param {string} msg
  * @return {*}
- * @author: gumingchen
+ * @author: neko
  */
 const codeHandle = (code, message) => {
   switch (code) {
@@ -62,7 +62,7 @@ const codeHandle = (code, message) => {
  * @description: axios创建
  * @param {*}
  * @return {*}
- * @author: gumingchen
+ * @author: neko
  */
 const service = axios.create({
   baseURL: `${ MAPPING }`,
@@ -77,7 +77,7 @@ const service = axios.create({
  * @description: axios请求拦截器
  * @param {*}
  * @return {*}
- * @author: gumingchen
+ * @author: neko
  */
 service.interceptors.request.use(
   config => {
@@ -103,7 +103,7 @@ service.interceptors.request.use(
  * @description: axios响应拦截器
  * @param {*}
  * @return {*}
- * @author: gumingchen
+ * @author: neko
  */
 service.interceptors.response.use(
   async response => {

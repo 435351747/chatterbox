@@ -2,7 +2,7 @@
  * @description: 长按
  * @param {*}
  * @return {*}
- * @author: gumingchen
+ * @author: neko
  */
 export default {
   beforeMount(el, binding) {

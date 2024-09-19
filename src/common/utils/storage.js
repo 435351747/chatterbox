@@ -1,6 +1,6 @@
 /*
  * @Description: 本地存储
- * @Author: gumingchen
+ * @author: neko
  * @Email: 1240235512@qq.com
  * @Date: 2020-12-28 16:25:18
  * @LastEditors: gumingchen
@@ -16,7 +16,7 @@ import { StorageType } from '@enums'
  * @param {String} value 存储值
  * @param {String} storage 存储位置
  * @return {*}
- * @author: gumingchen
+ * @author: neko
  */
 export function set(key, value = '', storage) {
   switch (storage) {
@@ -73,7 +73,7 @@ export function clear(key, storage) {
  * @description: token-存储、获取、清除
  * @param {*}
  * @return {*}
- * @author: gumingchen
+ * @author: neko
  */
 export function getAuth() {
   return JSON.parse(get(AUTH_KEY, AUTH_STORAGE) || '{}')
